@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nakleika.Prudexxx</title>
+    <link rel="stylesheet" href="calc.css">
+    <link rel="stylesheet" href="nacleyka.css">
+</head>
+<body>
+<div class="nac">
+    <h1 style="margin-top: 100px; margin-bottom: 100px;">Цель: назначить в график на ближайщее время!!!</h1>
+    <div class="nac2">
+        <input style="margin-bottom: 10px; border: 1px solid #111; color: #000; padding: 3px; font-size: 14px;" value="" autocomplete="off" class="c-input-username" id="username" placeholder="Введите имя клиента" type="text">
+        <!-- <textarea placeholder="Напишите сообщение здесь" style="width:200px; height: 20px;" class=".c-input-username" id="area1" ></textarea> -->
+        <div class="nac3">
+
+            <div class="tab">
+                <button class="tablinks" onclick="openCity(event,'blok' )"> Установка контакта</button>
+                <button class="tablinks" onclick="openCity(event,'blok1')"> Выявление потребностей</button>
+                <button class="tablinks" onclick="openCity(event,'blok2')"> Презентация</button>
+                <button class="tablinks" onclick="openCity(event,'blok3')"> 2 отработки возражений</button>
+                <button class="tablinks" onclick="openCity(event,'blok4')"> Назначь в график</button>
+                <!-- <button class="tablinks" onclick="openCity(event,'blok5')"> Заявки</button> -->
+                <button class="tablinks" onclick="openCity(event,'blok6')"> Полезное</button>
+                <button id="clock"></button>
+            </div>
+        </div>
+
+        <!-- скрытые листы -->
+        
+            <div class="tabcontent" id="blok6">
+            <a href="ttk.html"><button>клиент партнера(ТТК)</button></a>
+            <a href="router.html"><button>Заказать роутер</button></a>
+            <button id="myBtn">Дом не подключен</button>
+            <a href="http://dcc/Report/Show/30827" target="_blank" id="but"> <button class="butt">Дашборд </button></a>
+        
+            <button class="popup" onclick="myFunction()">Документы для подкл!
+                <span class="popuptext" id="myPopup">Для иностранных граждан в соответствии с Федеральным законом «О правовом положении иностранных граждан в Российской Федерации» от 25.07.2002 г. № 115-ФЗ документом, удостоверяющим личность, является:
+                    <br>
+
+                    • иностранный паспорт.     <br>
+                    
+                    Кроме того, при заключении Договора с Абонентом с иностранным гражданином необходимо запросить*:     <br>
+                    
+                    • документ, подтверждающий регистрацию по месту пребывания;
+                    <br>
+                    • разрешение на временное проживание (как документ, подтверждающий право иностранного гражданина временно проживать в РФ до получения вида на жительство), которое оформляется в виде отметки в документе, удостоверяющем личность иностранного гражданина;
+                    <br>
+                    или     <br>
+                    
+                    • вид на жительство (как документ, подтверждающий право иностранного гражданина постоянно проживать в РФ). Вид на жительство выдается сроком на 5 лет.
+                    <br> 
+                    * если клиент его предъявить не может (независимо от причины), то записывается со слов клиента адрес проживания на территории РФ.</span>
+              </button>
+            <!-- Модальный -->
+            <div id="myModal" class="modal">
+
+            <!-- Модальное содержание -->
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <p         <p>&ensp;&ensp;
+                    &ensp;&ensp; К сожалению, возможность подключить проводной интернет по вашему адресу отсутствует. Подключение вашего дома к сети в ближайшее время не планируется. Подскажите, пожалуйста, возможно, ваш дом стоит на пересечении двух улиц?
+        
+                  <b>  Нет</b> - заведи заявку на подключение (договор не создавай, тариф не выбирай), оставь в статусе "Новая", в течение часа она автоматически перейдет в статус Ждет подключения дома.<br><b>Если клиент желает узнать, как подключить дом?</b><br>
+        
+                 &ensp;&ensp;
+                 &ensp;&ensp;Очень приятно, что вы желаете пользоваться нашими услугами домашнего  телевидения. В случае, если от вас и ваших соседей будет подано коллективное заявление в вашу управляющую компанию, то ответственное лицо от управляющей компании сможет обратиться к нам с вопросом о возможности подключения дома.
+                
+                </p></p>
+            </div>
+           <div class="modal-content">
+            <span class="close">&times;</span>
+            <p         <p>&ensp;&ensp;
+                &ensp;&ensp;ля иностранных граждан в соответствии с Федеральным законом «О правовом положении иностранных граждан в Российской Федерации» от 25.07.2002 г. № 115-ФЗ документом, удостоверяющим личность, является:
+
+                • иностранный паспорт.
+                
+                Кроме того, при заключении Договора с Абонентом с иностранным гражданином необходимо запросить*:
+                
+                • документ, подтверждающий регистрацию по месту пребывания;
+                
+                • разрешение на временное проживание (как документ, подтверждающий право иностранного гражданина временно проживать в РФ до получения вида на жительство), которое оформляется в виде отметки в документе, удостоверяющем личность иностранного гражданина;
+                
+                или
+                
+                • вид на жительство (как документ, подтверждающий право иностранного гражданина постоянно проживать в РФ). Вид на жительство выдается сроком на 5 лет.
+                
+                * если клиент его предъявить не может (независимо от причины), то записывается со слов клиента адрес проживания на территории РФ. 
+            
+            </p></p>
+        </div>
+            </div>
+    
+        </div>
+
+            <div class="tabcontent" id="blok">
+                <span>К вам как можно обращаться по имени? <br>
+                    Ранее нашими услугами пользовались? <br>
+                   <span class="p1"></span>, номер с которого сейчас звоните можно использовать для связи с вами ?</span>    
+            </div>
+
+            <div class="tabcontent" id="blok1">
+                <span>
+                    Цель: Убедить в клиента к переходу номера!  
+                    Вам роутер, приставку в аренду? <br>
+                   <span class="p2"></span>, для вашего номера и для Вас от  Билайн есть предложение - перейти с вашим номером в компанию! Благодаря переходу возможно будет экономия, и + один счет для платежа - ваш номер! Удобно!<br>
+                   <span class="p3"></span>, от компании Билайн для Вас предусмотрена персональная скидка на x месяца x% на связь, стоимость получится чуть больше стоимости выбранного Вами тарифа, предлагаю пробовать, протестировать связь Билайн, пробовать думаю стоит! Можно Ваш номер перевести в компанию, можно новую сим карту. Скажите как будет удобней? <br>
+                    Чем чаще пользуетесь минутами/интернетом/смс/раздача вай фай?</span>    
+            </div>
+
+            <div class="tabcontent" id="blok2">
+                <span>Тариф UP - это тариф конструктор дает возможность вам управлять минутами и гб, и благодаря этому можно управлять ценою. Будут безлимитные мессенджеры( telegram,whatsApp и др. ), возможность подключить безлимитный YouTube и TикTок. К номеру можно будет подключить до 5 номеров. Также появится возможность установить бесплатное приложение билайн тв в котором можно будет смотреть бесплатно и безлимитно пакет кино и тв2 это более 200 каналов  + более  5000 видеозаписей фильмов и сериалов, передач Вам будет доступно  в бесплатной коллекцией от Билайна.
+                    <br>
+                    <br>
+                    ДИ + ТВ <br>
+
+                    Вам будет доступна скорость до "Х", это позволит вам с комфортом смотреть фильмы/сериалы в максимальном качестве, скачивать объемные файлы гораздо быстрее. <br>
+
+                    Пакет кино и тв2 открывает возможность смотреть более 200 каналов и +  более  5000 видеозаписей  фильмов и сериалов, мультфильмов для детей,     передача о животных вам будет доступно это видео коллеции от Билайна!<br>
+                    <br>
+                    <br>
+                    <span class="p"> </span>, вам нравится предложение ?
+
+                
+                </span>    
+            </div>
+            <div class="tabcontent" id="blok3">
+                <span> <b style="font-size: 16px;" >Мне нужно посоветоваться?</b> <br>
+                    Когда вы хотите решить какой-то вопрос, вы обращаетесь к профессионалу, а не к специалисту из другой сферы, верно? В данном случае я являюсь экспертом, и лучше обсудите все вопросы со мной, чтобы не было никаких сомнений. <br>
+                    Вы находитесь в таком возрасте, когда с вами должны советоваться, а не вы с кем-то. Тем более, уверен, что все прислушиваются именно к вашему мнению. <br>
+                       Чем мы можем компенсировать, чтобы вы взяли на себя эту ответственность? (намекаем на скидку). <br>
+                 <b style="font-size: 16px;" > Дорого!</b> <br>
+                    А с чем сравниваете? <br>
+                    "Давайте поделим сумму на количество дней в месяце. Получается, что наш продукт обойдется Вам как дополнительная кружка кофе(или булочка) в день — разве это много?"<br>
+                   <b style="font-size: 16px;" > У конкурентов дешевле!</b> <br>
+                    Вы знаете, честно скажу, да. Но у них есть ряд подводных камней: платное подключение, отсутствие скидок и тд(ремонт кабеля). В итоге общая стоимость получится даже больше. <br>
+                    <b style="font-size: 16px;" >Мне надо подумать!</b> <br>
+                    Понимаю, что предложение оказалось неожиданным , при этом я хотел бы помочь Вам принять решение, так как владею полной информацией о тарифе и могу ответить на любые вопросы,если есть сомнения давайте обсудим. <br>
+                    Понимаю, важно принять взвешенное решение, и при этом условия только лучше делаем, поэтому предлагаю вместе обсудить вашу выгоду и увидеть преимущества.
+                    <br>
+                <b style="font-size: 16px;" >    Мне не нужна вторая сим карта!</b> <br>
+                    Вторая сим карта может пригодится к примеру для регистрации новых аккаунтов(вк, одноклассники, авито и тд). <br>
+                    Да и к тому же будет возможность протестировать сим карту, и если связь окажется лучше, то можете в любое время перейти со своим номером в компанию.</span>    
+            </div>
+            <div class="tabcontent" id="blok4">
+                <span>1. Подключение бесплатное. <br>
+                    2. За час заранее ожидайте звонок от сервис инженера. <br>
+                    3. Укладку кабеля услугу не оказываем. <br>
+                    4. Паспорт обязательно! <br>
+                    Еще раз все перепроверь.( 100р mnp, 100р стоимость сим карты, в финансах будь точен. Про гп не забывай).</span>    
+        
+        </div>
+        
+        <div class="tabcontent" id="blok5">
+            <!-- <div class="blok5">
+                <div class="tipy">
+                    <select class="selected">
+                        <option  value="11">шпд</option>
+                        <option  value="22">конв</option>
+                        <option  value="33">конв+мнп</option>
+                        <option  value="33">конв>650</option>
+                        <option  value="33">шпд>650</option>
+                        <option  value="33">конв 0.5</option>
+                        <option  value="33">шпд 0.5</option>
+                    </select> <br>
+                    <input id="zayvka" type="tel" placeholder="Номер заявки" name="uname1" required class="input"> <br>
+                    <input id="tel" type="tel" placeholder="Номер телефона" name="uname1" required class="input"> <br>
+                    <input id="data" type="date" name="uname2" required class="input" > <br>
+                    <button class="btn_danye">Внести данные</button>
+                   
+                  
+                </div>
+             
+                    <table id="" class="tablt">
+                        <tr  >
+                            <th id="zayvka2"></th>  <th id="mnp2">шпд</th>  <th id="data2"></th> 
+                        </tr>
+                    </table>
+                    
+            </div> -->
+             
+            
+        </div>    
+        <textarea style="width:200px; height: 60px;" id="area" placeholder="Напишите сообщение здесь"></textarea>
+        <br>
+        <!-- <button onclick="localStorage.removeItem('area');area.value=''">Очистить</button> -->
+        
+       <div class="wrapper">
+                <form action="">
+                    <div class="niz">
+                        <div class="h">
+                          
+                            <input style="border: 1px solid #000;"  type="text"  class="input" maxlength="10" name="uname1"  pattern="\d{9}"  placeholder="Номер заявки" />
+                            <input style="border: 1px solid #000;"  type="date" >
+                            <select name="prof" id="">
+                                <option  value="шпд">шпд</option>
+                                <option  value="конв">конв</option>
+                                <option  value="конв+мнп">конв+мнп</option>
+                                <option  va lue="конв>650">конв>650</option>
+                                <option  value="шпд>650">шпд>650</option>
+                                <option  value="конв 0.5">конв 0.5</option>
+                                <option  value="шпд 0.5">шпд 0.5</option>
+                            </select>
+                            <input  style="border: 1px solid #000;" id="tel" type="" placeholder="Номер телефона" name="uname1"  pattern="[0-9]{10}" required title="Введите 10 цифр" class="input"> <br>
+                            <input style="border: 1px solid #000;"  type="submit" value="Внести данные"/>
+                            <span style="margin-left: 20px; padding: 3px; font-size: 15px; border: 1px solid #111" id="col">Всего заявок 0</span>
+                       
+                        <table id="ta" class="tatb">
+                            <tr class="tr1"> 
+                                <th>Заявка</th>
+                                <th>Дата</th>
+                                <th>статус</th>
+                            </tr>
+                        
+                            </table>
+                        </div>
+
+                    
+            
+                    <div class="tipy2">
+                        <table  class="tipy3" id="tipy3">
+                            <tr >
+                                <th id="mnp">шпд</th>
+                            </tr>
+                            <tr >
+                                <th id="zayvka1"></th>
+                            </tr>
+                            <tr >
+                                <th id="data1"> </th>
+                            <tr >
+                            
+                                <th id="tel1"></th>
+                            </tr>
+                            <tr >
+                                <th>PBrusnitsyn</th>
+                            </tr>
+                    
+                        </table>
+                    </div>
+                </form> 
+
+            </div>
+            <!-- <section>
+                <div class="container">
+                <div class="calculator">
+                <div class="display">
+                <div class="display-1">0</div>
+                <div class="display-2">0</div>
+                <div class="temp-result"></div>
+                </div>
+                <div class="all_button">
+                <div class="button all-clear">C</div>
+                <div class="button last-entity-clear">CE</div>
+                <div class="button operation">%</div>
+                <div class="button operation">/</div>
+                <div class="button number">7</div>
+                <div class="button number">8</div>
+                <div class="button number">9</div>
+                <div class="button operation">x</div>
+                <div class="button number">4</div>
+                <div class="button number">5</div>
+                <div class="button number">6</div>
+                <div class="button operation">-</div>
+                <div class="button number">1</div>
+                <div class="button number">2</div>
+                <div class="button number">3</div>
+                <div class="button operation">+</div>
+                <div class="button btn-0 number">0</div>
+                <div class="button number dot">.</div>
+                <div class="button equal">=</div>
+                </div>
+                </div>
+                </div>
+            </section> -->
+
+</div>
+
+<div class="calculator">
+
+    <input type="text" class="screen" id="screen" placeholder="0">
+
+    <button class="symbol" onclick="wipe()">AC</button>
+    <button class="symbol" onclick="wipe()">C</button>
+    <button class="symbol" onclick="show('.')"><b>.</b></button>
+    <button class="symbol" onclick="show('+')">+</button>
+
+    <button class="number" onclick="show('7')">7</button>
+    <button class="number" onclick="show('8')">8</button>
+    <button class="number" onclick="show('9')">9</button>
+    <button class="symbol" onclick="show(' -')"> <b>-</b></button>
+
+    <button class="number" onclick="show('4')">4</button>
+    <button class="number" onclick="show('5')">5</button>
+    <button class="number" onclick="show('6')">6</button>
+    <button class="symbol" onclick="show('*')">*</button>
+  
+    <button class="number" onclick="show('1')">1</button>
+    <button class="number" onclick="show('2')">2</button>
+    <button class="number" onclick="show('3')">3</button>
+    <button class="symbol" onclick="show('/')">/</button>
+
+
+    <button class="number" onclick="show('(')">(</button>
+    <button class="number" onclick="show('0')">0</button>
+    <button class="number" onclick="show(')')">)</button>
+    <button class="symbol" onclick="calc('=')">=</button>
+
+</div>
+<script src="calc.js"></script>
+
+<script>
+
+    let formData = {};
+    const form = document.querySelector('form')
+    console.log(form)
+
+    form.addEventListener('table', function(event){
+        console.log(event.target)
+    })
+
+// type3.value = localStorage.getItem('type3');
+//     type3.oninput = () => {
+//     localStorage.setItem('type3', type3.value)
+// };
+
+
+    // Получить модальный
+var modal = document.getElementById("myModal");
+
+// Получить кнопку, которая открывает модальный
+var btn = document.getElementById("myBtn");
+
+// Получить элемент <span>, который закрывает модальный
+var span = document.getElementsByClassName("close")[0];
+
+// Когда пользователь нажимает на кнопку, откройте модальный
+btn.onclick = function() {
+  modal.style.display = "block";
+}
+
+// Когда пользователь нажимает на <span> (x), закройте модальное окно
+span.onclick = function() {
+  modal.style.display = "none";
+}
+
+// Когда пользователь щелкает в любом месте за пределами модального, закройте его
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+
+</script>
+
+<script>
+
+let s;
+      document.querySelector('body').addEventListener('click',function (){ // делаю кликабельным сайт
+         s = document.querySelector('.c-input-username').value; //получаю имя и в переменную его переназначаю
+        console.log(s)
+       document.querySelector('.p').textContent = s
+  
+        // document.querySelectorAll('.content.p').innerHTML = '' + s 
+      })
+
+      document.querySelector('body').addEventListener('click',function (){ // делаю кликабельным сайт
+         s = document.querySelector('.c-input-username').value; //получаю имя и в переменную его переназначаю
+        console.log(s)
+       document.querySelector('.p1').textContent = s
+  
+        // document.querySelectorAll('.content.p').innerHTML = '' + s 
+      })
+
+      document.querySelector('body').addEventListener('click',function (){ // делаю кликабельным сайт
+         s = document.querySelector('.c-input-username').value; //получаю имя и в переменную его переназначаю
+        console.log(s)
+       document.querySelector('.p2').textContent = s
+  
+        // document.querySelectorAll('.content.p').innerHTML = '' + s 
+      })
+
+      document.querySelector('body').addEventListener('click',function (){ // делаю кликабельным сайт
+         s = document.querySelector('.c-input-username').value; //получаю имя и в переменную его переназначаю
+        console.log(s)
+       document.querySelector('.p3').textContent = s
+  
+        // document.querySelectorAll('.content.p').innerHTML = '' + s 
+      })
+     
+
+// console.log(tableFragment)
+</script>
+<script>
+    // Когда пользователь нажимает на <div>, откройте всплывающее окно
+    function myFunction() {
+      var popup = document.getElementById("myPopup");
+      popup.classList.toggle("show");
+    }
+    </script>
+<script src="calc.js"></script>
+<script src="nacleyka.js"></script>    
+</body>
+</html>

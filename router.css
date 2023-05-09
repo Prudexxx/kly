@@ -1,0 +1,140 @@
+/* Стиль кнопок вкладок */
+
+.tablink {
+    background-color: #555;
+    color: rgb(12, 12, 12);
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    font-size: 15px;
+    width: auto;
+  }
+  
+  /* Изменение цвета фона кнопок при наведении курсора */
+  .tablink:hover {
+    background-color: #777;
+  }
+  
+  /* Установка стилей по умолчанию для содержимого вкладки */
+  .tabcontent {
+    color: white;
+    display: none;
+    padding: 60px;
+    text-align: center;
+    height: 200px;
+  }
+  
+  /* Стиль каждого содержимого вкладки индивидуально */
+  #Xiomi1200 {background-color:rgb(97, 97, 206);}
+  #Keenetic1713 {background-color:rgb(97, 97, 206);}
+  #TPlink841 {background-color:rgb(97, 97, 206);}
+  #Keenetic1112 {background-color:rgb(97, 97, 206);}
+  #TPlinkC64 {background-color:rgb(97, 97, 206);}
+  #usil {background-color:rgb(97, 97, 206);}
+  
+  .zakaz1 {
+    margin-top: 150px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px 30px;
+   
+  }
+  
+  .b{
+    color: #040404;
+    padding: 20px 20px;
+    font-size: 20px;
+    background-color: rgb(98, 128, 220);
+    box-shadow: 0 0 5px 2px red;
+  }
+  .beelRout{
+    margin-top: 200px;
+  }
+  body{
+    transform: scale(0.8, 0.8);
+    
+    background-color: #333;
+   
+  }
+  p{
+    font-size: 18px;
+  }
+  
+  
+  .button {
+    position: relative;
+    color: #2196f3;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 16px;
+    letter-spacing: 4px;
+    padding: 20px 20px;
+    overflow: hidden;
+    transition: 2s;
+    border-radius: 25px;
+  
+  }
+  .button__line {
+    position: absolute;
+    display : block;
+  }
+  .button__line--top {
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 2px;
+    background:linear-gradient(90deg, transparent,  #2196f3);
+  }
+  .button:hover .button__line--top {
+    left: 100%;
+    transition: 1s;
+    transition-delay: 0.25s;
+  }
+  
+  .button__line--button {
+    bottom: 0;
+    right: -100%;
+    width: 100%;
+    height: 2px;
+    background:linear-gradient(270deg, transparent,  #2196f3);
+  }
+  .button:hover .button__line--button {
+    right:  100%;
+    transition: 1s;
+    transition-delay: 0.25s;
+  }
+  
+  .button__line--left {
+    bottom: -100%;
+    left: 0%;
+    width: 2px;
+    height: 100%;
+    background:linear-gradient(0deg, transparent,  #2196f3);
+  }
+  .button:hover .button__line--left {
+    bottom:   100%;
+    transition: 1s;
+    transition-delay: 0.25s;
+  
+    }
+  
+    .button__line--right {
+        top:  -100%;
+        right: 0%;
+        width: 2px;
+        height: 100%;
+        background:linear-gradient(180deg, transparent,  #2196f3);
+    }
+    .button:hover .button__line--right {
+        top:    100%;
+        transition: 1s;
+        transition-delay: 3s;
+        }
+        .button:hover {
+            box-shadow: 0 0 10px #2196f3, 0 0 40px #2196f3,0 0 80px #2196f3   ;
+            transition: 1s;
+            transform: scale(1.1)
+        }

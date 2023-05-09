@@ -1,0 +1,47 @@
+/* Стиль вкладки */
+.tab {
+    overflow: hidden;
+    border: 1px solid #ccc;
+    background-color: #eef6f0;
+  }
+  
+  /* Стиль кнопок, которые используются для открытия содержимого вкладки */
+  .tab button {
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+  }
+  
+  /* Изменение цвета фона кнопок при наведении курсора */
+  .tab button:hover {
+    background-color: #ddd;
+  }
+  
+  /* Создание активного/текущего класса связи вкладки */
+  .tab button.active {
+    background-color: #ccc;
+  }
+  
+  /* Стиль содержимого вкладки */
+  .tabcontent {
+    display: none;
+    padding: 6px 12px;
+    border: 1px solid #ccc;
+    border-top: none;
+  }
+
+  .zakaz {
+    background-color: rgb(211, 222, 222);
+    margin: 100px 200px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+  }
+  #defaultOpen{
+    margin-top: 1000px;
+  }
+  body{
+    background-color: rgb(96, 99, 98);
+  }

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="ttk.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="ttkk">
+
+        <div class="ttk">
+      
+      
+        <!-- Ссылки вкладки -->
+                <div class="tab">
+                    <button class="tablinks" id="yellow" onclick="openCity(event, 'London')">Активный договор</button>
+                    <button class="tablinks" id="red" onclick="openCity(event, 'Paris')">Нету договора</button>
+                    <button class="tablinks" id="green" onclick="openCity(event, 'Tokyo')">Активный договор, но говорит расторг!</button>
+                    <button class="tablinks" onclick="window.location.href = 'index.html';">НАЗАД   </button>
+                </div>
+                
+                <!-- Содержимое вкладки -->
+                <div id="London" class="tabcontent">
+                
+                    <p>Cоздавать и назначать заявки нельзя.
+                        <br>
+                        <hr>
+                        Важно! Причину отказа в подключении – наличие договора с ТТК/ЗТ в квартире – не озвучиваем клиентам! 
+                        <br>
+                        <hr>
+ 
+<span> <b>Почему нельзя подключить</b></span>: Имя клиента, к сожалению, подключение вашей квартиры технически невозможно. 
+<br>
+<hr>
+<span> <b>Почему </b></span>: Потому что интернет линия в эту квартиру уже занята.  <br>
+<hr>
+ 
+ <span> <b> Спросит про сроки </b></span>: Мне искренне жаль, что так случилось/получилось, но на данный момент техническая возможность подключения по данному адресу отсутствует
+                    </p>
+                </div>
+                
+                <div id="Paris" class="tabcontent">
+                    <h3>Можно назначать!</h3>
+                   
+                </div>
+                
+                <div id="Tokyo" class="tabcontent">
+                    
+                    <p> 1.Создай стандартную заявку на подключение (при выборе квартиры укажи номер квартиры+000. Если у клиента квартира 7, то сделай номер квартиры 7000).
+                         <br>
+                         <hr>
+                        2. Переведи в статус Позвонить клиенту с таймером + 7 дней. В комментарии укажи, что клиент расторг договор с ТТК/ЗТ, но числится в ХД активным. Укажи фактический номер квартиры клиента. Необходима проверка.
+                         <br> 
+                         <hr>
+            
+                        3. Дополнительно на договоре создай заявку «Offline обработка» перевести на ответственных Очереди ЦПК/Обзвон – требует уточнения. В заявке укажи, что клиент расторг договор с ТТК/ЗТ, но числится в ХД активным. Необходима проверка. 
+                       <br>
+                       <hr>
+                         Имя клиента, для того, чтобы оформить заявку на подключение по вашему адресу, нам нужно сделать дополнительную проверку. Как только мы всё проверим, сразу же вам позвоним. Будьте на связи! 
+                       
+                      <br></p>
+
+                </div>      
+        </div>
+    </div>
+    <script>
+        function openCity(evt, cityName) {
+  // Объявить все переменные
+  var i, tabcontent, tablinks;
+
+  // Получить все элементы с помощью class="tabcontent" и спрятать их
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+
+  // Получить все элементы с помощью class="tablinks" и удалить class "active"
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+
+  // Показать текущую вкладку и добавить "active" класс для кнопки, которая открыла вкладку
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+
+    </script>
+
+</body>
+</html>

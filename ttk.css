@@ -1,0 +1,83 @@
+.ttkk {
+    line-height: 25px;
+    margin:  100px 200px ;
+    background-color: rgb(255, 255, 255);
+    font-size: 20px;
+    }
+     
+    body {
+        font-family: Arial, Helvetica, sans-serif;
+    background-color: antiquewhite;
+    }
+    
+    span {
+        color: rgb(45, 127, 5);
+    }
+    /* Стиль вкладки */
+    .tab {
+        overflow: hidden;
+        border: 1px solid #171010;
+        background-color: #ddd;
+        display: flex;
+        flex-wrap: ;
+      }
+      
+      /* Стиль кнопок, которые используются для открытия содержимого вкладки */
+      .tab button {
+        background-color: inherit;
+        border: none; 
+        outline: none;
+        cursor: pointer;
+        padding: 14px 16px;
+        transition: 0.3s;
+       
+        
+      }
+      
+      /* Изменение цвета фона кнопок при наведении курсора */
+      .tab button:hover {
+        background-color: #ddd;
+      }
+      
+      /* Создание активного/текущего класса связи вкладки */
+      .tab button.active {
+        background-color: #ccc;
+      }
+      
+      /* Стиль содержимого вкладки */
+      .tabcontent {
+        display: none;
+        padding: 6px 12px;
+        border: 1px solid #ccc;
+        border-top: none;
+      }
+      a {
+        text-decoration: none;
+        color: #000;
+      }
+      span {
+        color: rgb(22, 142, 6);
+        
+      }
+      .str {
+        font-size: 15px;
+      }
+      #yellow{
+        background-color: #ffcc00;
+        padding-left: 60px;
+        padding-right: 60px;
+      }
+      
+    
+    #red{
+      background-color: #f85044;
+      padding-left: 60px;
+        padding-right: 60px;
+    }
+    #green{
+      background-color: rgb(74, 188, 74);
+    }
+    .knopkOdin1{
+      background-color: aqua;
+      padding: 10px;
+    }
